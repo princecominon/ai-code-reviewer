@@ -198,9 +198,19 @@ export default function Hero() {
 
             >
 
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span className="relative flex h-2 w-2">
 
-              Gemini AI Powered
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+
+              </span>
+
+              <span className="text-[10px] font-bold tracking-[0.2em] text-cyan-300">LIVE</span>
+
+              <span className="text-white/40">•</span>
+
+              <span>Multi-Agent PR Review</span>
 
             </motion.div>
 
@@ -310,11 +320,21 @@ export default function Hero() {
 
                 </button>
 
-                <button className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl backdrop-blur-md transition-colors flex items-center gap-2">
+                <a
+
+                  href="https://github.com/princecominon/ai-code-reviewer"
+
+                  target="_blank"
+
+                  rel="noopener noreferrer"
+
+                  className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl backdrop-blur-md transition-colors flex items-center gap-2 cursor-pointer"
+
+                >
 
                   <GithubIcon className="w-5 h-5" /> View GitHub
 
-                </button>
+                </a>
 
               </motion.div>
 
@@ -392,4 +412,3 @@ export default function Hero() {
   );
 
 }
-
