@@ -189,12 +189,12 @@ GITHUB_TOKEN=your_github_token_here
 
 bashdocker-compose up --build
 docker exec -it codesentinel python -m codesentinel review \
-  --pr-url https://github.com/langchain-ai/langchain/pull/12847
+  --pr-url [[https://github.com/princecominon/ai-code-reviewer]
 
 3b. Run locally
 
 bashpip install -r requirements.txt
-python -m codesentinel review --pr-url https://github.com/langchain-ai/langchain/pull/12847
+python -m codesentinel review --pr-url https://github.com/princecominon/ai-code-reviewer
 
 CLI options
 
